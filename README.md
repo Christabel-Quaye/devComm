@@ -15,7 +15,7 @@ $ npm install gulp gulp-sass sass --save-dev
 ```
 
 ### Steps
-1. Clone the repository: `git clone https://github.com/josephchuangtw/devComm.git`
+1. Clone the repository: `git clone https://github.com/Christabel-Quaye/devComm.git`
 2. Navigate to the project directory: `cd devComm`
 3. Install all dependencies using npm: `npm install`.
 4. Add `"gulp": "gulp"` to your `package.json`
