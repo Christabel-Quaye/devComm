@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devComm</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <div class="navigation menu-active">
+      <p>DevCommunity</p>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <lord-icon
+          src="https://cdn.lordicon.com/eouimtlu.json"
+          trigger="hover"
+          style="width: 25px; height: 25px"
+        >
+        </lord-icon>
+      </div>
+      <nav>
+        <!-- responsive sidebar -->
+        <ul class="sidenav">
+          <lord-icon
+            onclick="hideSidebar()"
+            src="https://cdn.lordicon.com/nqtddedc.json"
+            trigger="hover"
+            style="width: 25px; height: 25px"
+            class="close"
+          >
+          </lord-icon>
+
+          <li data-trigger="home">
+            <lord-icon
+              src="https://cdn.lordicon.com/qeltvbrs.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#home">Home</a>
+          </li>
+          <li data-trigger="work">
+            <lord-icon
+              src="https://cdn.lordicon.com/ipbtscff.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#works">How It Works</a>
+          </li>
+          <li data-trigger="contact">
+            <lord-icon
+              src="https://cdn.lordicon.com/cjhlqtae.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li data-trigger="login">
+            <lord-icon
+              src="https://cdn.lordicon.com/xfzuyvam.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#login">Login</a>
+          </li>
+        </ul>
+
+        <!-- web navigation -->
+        <ul>
+          <li data-trigger="home">
+            <lord-icon
+              src="https://cdn.lordicon.com/qeltvbrs.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#">Home</a>
+          </li>
+          <li data-trigger="work">
+            <lord-icon
+              src="https://cdn.lordicon.com/ipbtscff.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#works">How It Works</a>
+          </li>
+          <li data-trigger="contact">
+            <lord-icon
+              src="https://cdn.lordicon.com/cjhlqtae.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li data-trigger="login">
+            <lord-icon
+              src="https://cdn.lordicon.com/xfzuyvam.json"
+              trigger="hover"
+              style="width: 25px; height: 25px"
+              class="svg-icon"
+            >
+            </lord-icon>
+            <a href="#login">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- hero section -->
+    <div class="hero" id="home">
+      <div class="content">
+        <h2>
+          Connect with Programmers, Collaborate on Projects and, Elevate Your
+          Code.
+        </h2>
+        <button class="cta-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            width="26"
+            height="26"
+            viewBox="0 0 56 54"
+          >
+            <defs>
+              <linearGradient id="linear-gradient">
+                <stop offset="0" stop-color="#065bf7" />
+                <stop offset="1" stop-color="#f11f60" />
+              </linearGradient>
+            </defs>
+            <g
+              id="play_button"
+              data-name="play button"
+              transform="translate(-98 -511)"
+            >
+              <ellipse
+                id="Ellipse_1"
+                data-name="Ellipse 1"
+                cx="28"
+                cy="27"
+                rx="28"
+                ry="27"
+                transform="translate(98 511)"
+                fill="url(#linear-gradient)"
+              />
+              <path
+                id="Polygon_1"
+                data-name="Polygon 1"
+                d="M14.5,0,29,24H0Z"
+                transform="matrix(0.017, 1, -1, 0.017, 142.193, 523)"
+              />
+            </g>
+          </svg>
+          How It Works
+        </button>
+      </div>
+      <p>
+        Join a Community of Developers, Find the Perfect Coding Partners, and
+        Launch Your Dream Projects.
+      </p>
+    </div>
+
+    <!-- services -->
+    <div class="works" id="works">
+      <div class="info">
+        <h2>1</h2>
+        <h3>What we do</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <p>
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+
+        <button>Read more</button>
+      </div>
+      <img
+        src="../assets/group.jpg"
+        alt="group of people"
+        className="work-image"
+      />
+    </div>
+
+    <img src="../assets/images.png" alt="devs" class="wave" />
+    <!-- History -->
+    <div class="history">
+      <div class="aim">
+        <div class="vision">
+          <h2>Our Vision</h2>
+          <ul>
+            <li>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </li>
+            <li>
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages
+            </li>
+          </ul>
+        </div>
+        <div class="goals">
+          <h2>Main Goals</h2>
+          <ul>
+            <li>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </li>
+            <li>
+              It has survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </li>
+            <li>
+              It was popularised in the 1960s with the release of Letraset
+              sheets containing Lorem Ipsum passages
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="info">
+        <h2>2</h2>
+        <h3>History</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+        <p>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown printer took a galley of type and scrambled it
+          to make a type specimen book. It has survived not only five centuries,
+          but also the leap into electronic typesetting, remaining essentially
+          unchanged.
+        </p>
+        <p>
+          It was popularised in the 1960s with the release of Letraset sheets
+          containing Lorem Ipsum passages, and more recently with desktop
+          publishing software like Aldus PageMaker including versions of Lorem
+          Ipsum.
+        </p>
+        <p>
+          This book is a treatise on the theory of ethics, very popular during
+          the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+          amet..", comes from a line in section 1.10.32. The standard chunk of
+          Lorem Ipsum used since the 1500s is reproduced below for those
+          interested.
+        </p>
+      </div>
+    </div>
+
+    <!-- Product -->
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
