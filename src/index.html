@@ -8,53 +8,45 @@
   </head>
   <body>
     <!-- navigation -->
-    <section class="navigation menu-active">
-      <p>DevCommunity</p>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <lord-icon
-          src="https://cdn.lordicon.com/eouimtlu.json"
-          trigger="hover"
-          style="width: 25px; height: 25px"
-        >
-        </lord-icon>
-      </div>
-      <nav>
-        <!-- responsive sidebar -->
-        <ul class="sidenav">
-          <lord-icon
-            onclick="hideSidebar()"
-            src="https://cdn.lordicon.com/nqtddedc.json"
-            trigger="hover"
-            style="width: 25px; height: 25px"
-            class="close"
-          >
-          </lord-icon>
-
-          <li data-trigger="home">
-            <a href="#home">Home</a>
-          </li>
-          <li data-trigger="work">
-            <a href="#works">How It Works</a>
-          </li>
-          <li data-trigger="contact">
-            <a href="#news">News</a>
-          </li>
-        </ul>
-
-        <!-- web navigation -->
-        <ul>
-          <li data-trigger="home">
-            <a href="#">Home</a>
-          </li>
-          <li data-trigger="work">
-            <a href="#works">How It Works</a>
-          </li>
-          <li data-trigger="contact">
-            <a href="#news">News</a>
-          </li>
-        </ul>
-      </nav>
-    </section>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#works">How It Works</a></li>
+        <li><a href="#news">News</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">DevCommunity</a></li>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#works">How It Works</a></li>
+        <li class="hideOnMobile"><a href="#news">News</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
     <main>
       <!-- hero section -->
       <section class="hero" id="home">
@@ -338,7 +330,6 @@
       <hr class="footer-divider" />
       <p>@doxa</p>
     </footer>
-
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script src="./index.js"></script>
   </body>
