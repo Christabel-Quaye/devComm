@@ -47,6 +47,12 @@ nav {
     &:first-child {
       margin-right: auto;
     }
+
+    .logo {
+      color: $nav;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
   }
   a {
     height: 100%;
