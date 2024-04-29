@@ -27,98 +27,81 @@ $BG1: #fafbfb;
   justify-content: center;
 }
 
-.navigation {
-  @include flexStyle;
-  padding: $base-margin;
+nav {
   background-color: $BG1;
   box-shadow: 3px 3px 5px rgba($color: $nav, $alpha: 0.3);
 
-  p {
-    color: $nav;
-    font-weight: bold;
-    font-size: 1.5em;
+  ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
+  li {
+    height: 50px;
+    font-family: "Yu Gothic", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
 
-  .menu-icon {
+    &:first-child {
+      margin-right: auto;
+    }
+  }
+  a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 9999;
+
+  li {
+    width: 100%;
+  }
+  a {
+    width: 100%;
+  }
+}
+
+.menu-button {
+  display: none;
+}
+@media (max-width: 800px) {
+  .hideOnMobile {
     display: none;
-    cursor: pointer;
   }
 
-  nav {
-    @include flexStyle;
-
-    ul {
-      @include flexBasicStyle;
-      list-style: none;
-
-      li {
-        @include flexBasicStyle;
-        margin-right: 40px;
-        font-family: "Yu Gothic", sans-serif;
-        font-weight: 500;
-        font-size: 18px;
-        &:last-child {
-          margin-right: 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: $nav;
-        }
-      }
-    }
-
-    .sidenav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 15vw;
-      z-index: 999;
-      background-color: rgba(255, 255, 255, 0.02);
-      backdrop-filter: blur(10px);
-      box-shadow: -10px 0 10px rgba($nav, $alpha: 0.1);
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      padding-top: 1em;
-
-      a {
-        width: 100%;
-      }
-
-      li {
-        width: 100%;
-        margin-bottom: $base-padding;
-        padding: $base-padding;
-        align-items: center;
-        justify-content: flex-start;
-
-        lord-icon {
-          margin-right: $base-padding;
-        }
-      }
-
-      .close {
-        position: relative;
-        right: -12em;
-      }
-    }
+  .menu-button {
+    display: block;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .menu-icon {
-      display: flex;
-    }
-    nav {
-      display: none;
-      flex-direction: column;
-
-      &.menu-active {
-        display: flex;
-      }
-    }
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
   }
 }
 
@@ -609,7 +592,7 @@ footer {
       li {
         margin-bottom: 5px;
         font-family: "Yu Gothic", sans-serif;
-        
+
         a {
           text-decoration: none;
           color: #f0f0f0;
@@ -666,11 +649,10 @@ footer {
   }
 
   .footer-divider {
-  border-top: .5px solid white;
-  width: 100%;
-  margin-top: 20px;
-}
-
+    border-top: 0.5px solid white;
+    width: 100%;
+    margin-top: 20px;
+  }
 
   @media (max-width: 768px) {
     .footer-column {
